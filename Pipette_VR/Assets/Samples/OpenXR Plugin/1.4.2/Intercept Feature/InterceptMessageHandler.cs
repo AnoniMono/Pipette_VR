@@ -16,7 +16,7 @@ namespace UnityEngine.XR.OpenXR.Samples.InterceptFeature
                 textMesh.text = "InterceptCreateSession feature not enabled";
             else
             {
-                textMesh.text = feature.receivedMessage;
+                textMesh.text = feature.ReceivedMessage;
                 textMesh.color = Color.white;
             }
 

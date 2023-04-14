@@ -38,7 +38,7 @@ namespace UnityEngine.XR.OpenXR.Samples.InterceptFeature
         /// <summary>
         /// Message received from native as a result of the intercepted xrCreateSession call.
         /// </summary>
-        public string receivedMessage { get; private set; }
+        public string ReceivedMessage { get; private set; }
 
         /// <inheritdoc />
         protected override IntPtr HookGetInstanceProcAddr(IntPtr func)
@@ -74,7 +74,7 @@ namespace UnityEngine.XR.OpenXR.Samples.InterceptFeature
             if (null == feature)
                 return;
 
-            feature.receivedMessage = message;
+            feature.ReceivedMessage = message;
         }
 
         /// <inheritdoc />
